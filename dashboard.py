@@ -11,9 +11,8 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 SECTORS_API_KEY = os.getenv("SECTORS_API_KEY")
 
 # Konstanta API
-API_KEY = SECTORS_API_KEY
 BASE_URL = "https://api.sectors.app/v1"
-HEADERS = {"Authorization": API_KEY}
+HEADERS = {"Authorization": SECTORS_API_KEY}
 
 # Inisialisasi LLM
 llm = ChatGroq(
